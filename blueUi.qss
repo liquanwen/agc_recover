@@ -1,0 +1,41 @@
+.QWidget#widget {border-image: url(:/images/ShowWidget/VCG41N670692920.jpg);}
+
+QWidget {font-size: 28px;}
+#label_24 {font-size: 55px;}
+
+.QLabel {border-radius: 5px;}
+#label_enable {background-color: green;}
+#label_run_mode {background-color: green;}
+
+QTabWidget::pane{
+	border:none;
+}
+
+.QLabel {color: white;}
+
+.QFrame {border-style: outset; border-radius: 25px;border-width: 15px; border-image: url(:/images/ShowWidget/VCG41N1262475670.jpg);}
+.QCheckBox {color: white;}
+
+
+QTabBar::tab {min-width:100px;border: 2px none;border-top-left-radius: 10px;border-top-right-radius: 10px;padding:5px;}
+QTabBar::tab:!selected {margin-top: 5px;}
+QTabBar::tab:selected {background-color: rgb(0, 255, 255);}
+
+.QGroupBox {color: white;}
+QGroupBox#groupBox {border-style: outset; border-radius: 25px; border-width: 15px; border-color: blue;}
+QGroupBox#groupBox_6 {border-style: outset; border-radius: 25px; border-width: 15px; border-color: blue;}
+QGroupBox#groupBox_2 {border-style: outset; border-radius: 25px; border-width: 15px; border-color: blue;}
+QGroupBox#groupBox_7 {border-style: outset; border-radius: 25px; border-width: 15px; border-color: blue; border-right-style: none;}
+QGroupBox#groupBox_8 {border-style: outset; border-radius: 25px; border-width: 15px; border-color: blue; border-left-style: none;}
+
+QPushButton:disabled {background-color:darkgray;}
+QPushButton:enabled {background-color:white;}
+QPushButton{background-color: rgb(225, 225, 225);border:2px groove gray;border-radius:10px;padding:2px 4px;border-style: outset;}
+QPushButton:hover{background-color:rgb(229, 241, 251); color: black;}
+QPushButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}
+
+QToolButton{background-color:dodgerblue;border:8px groove blue;border-radius:25px;padding:2px 4px;border-style: outset;}
+QToolButton:hover{background-color:aqua; color: black;}
+QToolButton:pressed{background-color:darkturquoise;border-style: inset;}
+
+#groupBox_9 {border-style: none;}

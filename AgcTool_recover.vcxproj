@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{883A360A-CC9E-3CE2-A5DB-8B9EBCC9B574}</ProjectGuid>
+    <RootNamespace>AgcTool_recover</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>..\..\..\bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>..\..\build\agc_recover\</IntermediateDirectory>
+    <PrimaryOutput>AgcTool_recover</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>..\..\..\bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>..\..\build\agc_recover\</IntermediateDirectory>
+    <PrimaryOutput>AgcTool_recover</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\build\agc_recover\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AgcTool_recover</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\build\agc_recover\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AgcTool_recover</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.;..\include;..\base\filepath;..\base\megpub;..\include;..\mqttclient;..\..\..\..\QT\5.12.3\msvc2017\include;..\..\..\..\QT\5.12.3\msvc2017\include\QtCharts;..\..\..\..\QT\5.12.3\msvc2017\include\QtWidgets;..\..\..\..\QT\5.12.3\msvc2017\include\QtGui;..\..\..\..\QT\5.12.3\msvc2017\include\QtANGLE;..\..\..\..\QT\5.12.3\msvc2017\include\QtNetwork;..\..\..\..\QT\5.12.3\msvc2017\include\QtSerialPort;..\..\..\..\QT\5.12.3\msvc2017\include\QtCore;..\..\build\agc_recover\moc;..\..\build\agc_recover\ui;C:\VulkanSDK\1.0.51.0\include;..\..\..\..\QT\5.12.3\msvc2017\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>..\..\build\agc_recover\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;4996;4100;4018;4101;4189;4305;4309;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>..\..\build\agc_recover\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;MEFSKY_32;_WIN32_WINNT=0x0500;QT_NO_DEBUG;QT_CHARTS_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_SERIALPORT_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>G:\MEGSKY\bin\filepath.lib;G:\MEGSKY\bin\megstd.lib;G:\MEGSKY\bin\megpub.lib;G:\MEGSKY\bin\paho-mqtt3c.lib;G:\QT\5.12.3\msvc2017\lib\Qt5Charts.lib;G:\QT\5.12.3\msvc2017\lib\Qt5Widgets.lib;G:\QT\5.12.3\msvc2017\lib\Qt5Gui.lib;G:\QT\5.12.3\msvc2017\lib\Qt5Network.lib;G:\QT\5.12.3\msvc2017\lib\Qt5SerialPort.lib;G:\QT\5.12.3\msvc2017\lib\Qt5Core.lib;G:\QT\5.12.3\msvc2017\lib\qtmain.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>G:\MEGSKY\bin;G:\QT\5.12.3\msvc2017\lib;C:\opensslx86\lib;C:\Utils\my_sql\mysql-5.6.11-win32\lib;C:\Utils\postgresqlx86\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\AgcTool_recover.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;MEFSKY_32;_WIN32_WINNT=0x0500;QT_NO_DEBUG;QT_CHARTS_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_SERIALPORT_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.;..\include;..\base\filepath;..\base\megpub;..\include;..\mqttclient;..\..\..\..\QT\5.12.3\msvc2017\include;..\..\..\..\QT\5.12.3\msvc2017\include\QtCharts;..\..\..\..\QT\5.12.3\msvc2017\include\QtWidgets;..\..\..\..\QT\5.12.3\msvc2017\include\QtGui;..\..\..\..\QT\5.12.3\msvc2017\include\QtANGLE;..\..\..\..\QT\5.12.3\msvc2017\include\QtNetwork;..\..\..\..\QT\5.12.3\msvc2017\include\QtSerialPort;..\..\..\..\QT\5.12.3\msvc2017\include\QtCore;..\..\build\agc_recover\moc;..\..\build\agc_recover\ui;C:\VulkanSDK\1.0.51.0\include;..\..\..\..\QT\5.12.3\msvc2017\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>..\..\build\agc_recover\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;4996;4100;4018;4101;4189;4305;4309;4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>..\..\build\agc_recover\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;MEFSKY_32;_WIN32_WINNT=0x0500;QT_CHARTS_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_SERIALPORT_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>G:\MEGSKY\bin\filepath.lib;G:\MEGSKY\bin\megstd.lib;G:\MEGSKY\bin\megpub.lib;G:\MEGSKY\bin\paho-mqtt3c.lib;G:\QT\5.12.3\msvc2017\lib\Qt5Chartsd.lib;G:\QT\5.12.3\msvc2017\lib\Qt5Widgetsd.lib;G:\QT\5.12.3\msvc2017\lib\Qt5Guid.lib;G:\QT\5.12.3\msvc2017\lib\Qt5Networkd.lib;G:\QT\5.12.3\msvc2017\lib\Qt5SerialPortd.lib;G:\QT\5.12.3\msvc2017\lib\Qt5Cored.lib;G:\QT\5.12.3\msvc2017\lib\qtmaind.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>G:\MEGSKY\bin;G:\QT\5.12.3\msvc2017\lib;C:\opensslx86\lib;C:\Utils\my_sql\mysql-5.6.11-win32\lib;C:\Utils\postgresqlx86\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\AgcTool_recover.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;MEFSKY_32;_WIN32_WINNT=0x0500;QT_CHARTS_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_SERIALPORT_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="RealTimeCurveQChartWidget.cpp" />
+    <ClCompile Include="chart.cpp" />
+    <ClCompile Include="dlg_log.cpp" />
+    <ClCompile Include="dlg_mainwindow.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mqtt_pub_inter.cpp" />
+    <ClCompile Include="public_struct.cpp" />
+    <ClCompile Include="real_data.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="RealTimeCurveQChartWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RealTimeCurveQChartWidget.h;G:\MEGSKY\dev\build\agc_recover\moc\moc_predefs.h;G:\QT\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\QT\5.12.3\msvc2017\bin\moc.exe  -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DMEFSKY_32 -D_WIN32_WINNT=0x0500 -DQT_NO_DEBUG -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SERIALPORT_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include G:/MEGSKY/dev/build/agc_recover/moc/moc_predefs.h -IG:/QT/5.12.3/msvc2017/mkspecs/win32-msvc -IG:/MEGSKY/dev/src/agc_recover -IG:/MEGSKY/dev/src/agc_recover -IG:/MEGSKY/dev/src/include -IG:/MEGSKY/dev/src/base/filepath -IG:/MEGSKY/dev/src/base/megpub -IG:/MEGSKY/dev/src/include -IG:/MEGSKY/dev/src/mqttclient -IG:/QT/5.12.3/msvc2017/include -IG:/QT/5.12.3/msvc2017/include/QtCharts -IG:/QT/5.12.3/msvc2017/include/QtWidgets -IG:/QT/5.12.3/msvc2017/include/QtGui -IG:/QT/5.12.3/msvc2017/include/QtANGLE -IG:/QT/5.12.3/msvc2017/include/QtNetwork -IG:/QT/5.12.3/msvc2017/include/QtSerialPort -IG:/QT/5.12.3/msvc2017/include/QtCore RealTimeCurveQChartWidget.h -o G:\MEGSKY\dev\build\agc_recover\moc\moc_RealTimeCurveQChartWidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC RealTimeCurveQChartWidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\MEGSKY\dev\build\agc_recover\moc\moc_RealTimeCurveQChartWidget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RealTimeCurveQChartWidget.h;G:\MEGSKY\dev\build\agc_recover\moc\moc_predefs.h;G:\QT\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\QT\5.12.3\msvc2017\bin\moc.exe  -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DMEFSKY_32 -D_WIN32_WINNT=0x0500 -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SERIALPORT_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include G:/MEGSKY/dev/build/agc_recover/moc/moc_predefs.h -IG:/QT/5.12.3/msvc2017/mkspecs/win32-msvc -IG:/MEGSKY/dev/src/agc_recover -IG:/MEGSKY/dev/src/agc_recover -IG:/MEGSKY/dev/src/include -IG:/MEGSKY/dev/src/base/filepath -IG:/MEGSKY/dev/src/base/megpub -IG:/MEGSKY/dev/src/include -IG:/MEGSKY/dev/src/mqttclient -IG:/QT/5.12.3/msvc2017/include -IG:/QT/5.12.3/msvc2017/include/QtCharts -IG:/QT/5.12.3/msvc2017/include/QtWidgets -IG:/QT/5.12.3/msvc2017/include/QtGui -IG:/QT/5.12.3/msvc2017/include/QtANGLE -IG:/QT/5.12.3/msvc2017/include/QtNetwork -IG:/QT/5.12.3/msvc2017/include/QtSerialPort -IG:/QT/5.12.3/msvc2017/include/QtCore RealTimeCurveQChartWidget.h -o G:\MEGSKY\dev\build\agc_recover\moc\moc_RealTimeCurveQChartWidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC RealTimeCurveQChartWidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\MEGSKY\dev\build\agc_recover\moc\moc_RealTimeCurveQChartWidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="agc_recover.pro" />
+    <CustomBuild Include="chart.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">chart.h;G:\MEGSKY\dev\build\agc_recover\moc\moc_predefs.h;G:\QT\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\QT\5.12.3\msvc2017\bin\moc.exe  -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DMEFSKY_32 -D_WIN32_WINNT=0x0500 -DQT_NO_DEBUG -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SERIALPORT_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include G:/MEGSKY/dev/build/agc_recover/moc/moc_predefs.h -IG:/QT/5.12.3/msvc2017/mkspecs/win32-msvc -IG:/MEGSKY/dev/src/agc_recover -IG:/MEGSKY/dev/src/agc_recover -IG:/MEGSKY/dev/src/include -IG:/MEGSKY/dev/src/base/filepath -IG:/MEGSKY/dev/src/base/megpub -IG:/MEGSKY/dev/src/include -IG:/MEGSKY/dev/src/mqttclient -IG:/QT/5.12.3/msvc2017/include -IG:/QT/5.12.3/msvc2017/include/QtCharts -IG:/QT/5.12.3/msvc2017/include/QtWidgets -IG:/QT/5.12.3/msvc2017/include/QtGui -IG:/QT/5.12.3/msvc2017/include/QtANGLE -IG:/QT/5.12.3/msvc2017/include/QtNetwork -IG:/QT/5.12.3/msvc2017/include/QtSerialPort -IG:/QT/5.12.3/msvc2017/include/QtCore chart.h -o G:\MEGSKY\dev\build\agc_recover\moc\moc_chart.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC chart.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\MEGSKY\dev\build\agc_recover\moc\moc_chart.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">chart.h;G:\MEGSKY\dev\build\agc_recover\moc\moc_predefs.h;G:\QT\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\QT\5.12.3\msvc2017\bin\moc.exe  -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DMEFSKY_32 -D_WIN32_WINNT=0x0500 -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SERIALPORT_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include G:/MEGSKY/dev/build/agc_recover/moc/moc_predefs.h -IG:/QT/5.12.3/msvc2017/mkspecs/win32-msvc -IG:/MEGSKY/dev/src/agc_recover -IG:/MEGSKY/dev/src/agc_recover -IG:/MEGSKY/dev/src/include -IG:/MEGSKY/dev/src/base/filepath -IG:/MEGSKY/dev/src/base/megpub -IG:/MEGSKY/dev/src/include -IG:/MEGSKY/dev/src/mqttclient -IG:/QT/5.12.3/msvc2017/include -IG:/QT/5.12.3/msvc2017/include/QtCharts -IG:/QT/5.12.3/msvc2017/include/QtWidgets -IG:/QT/5.12.3/msvc2017/include/QtGui -IG:/QT/5.12.3/msvc2017/include/QtANGLE -IG:/QT/5.12.3/msvc2017/include/QtNetwork -IG:/QT/5.12.3/msvc2017/include/QtSerialPort -IG:/QT/5.12.3/msvc2017/include/QtCore chart.h -o G:\MEGSKY\dev\build\agc_recover\moc\moc_chart.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC chart.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\MEGSKY\dev\build\agc_recover\moc\moc_chart.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="dlg_log.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">dlg_log.h;G:\MEGSKY\dev\build\agc_recover\moc\moc_predefs.h;G:\QT\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\QT\5.12.3\msvc2017\bin\moc.exe  -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DMEFSKY_32 -D_WIN32_WINNT=0x0500 -DQT_NO_DEBUG -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SERIALPORT_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include G:/MEGSKY/dev/build/agc_recover/moc/moc_predefs.h -IG:/QT/5.12.3/msvc2017/mkspecs/win32-msvc -IG:/MEGSKY/dev/src/agc_recover -IG:/MEGSKY/dev/src/agc_recover -IG:/MEGSKY/dev/src/include -IG:/MEGSKY/dev/src/base/filepath -IG:/MEGSKY/dev/src/base/megpub -IG:/MEGSKY/dev/src/include -IG:/MEGSKY/dev/src/mqttclient -IG:/QT/5.12.3/msvc2017/include -IG:/QT/5.12.3/msvc2017/include/QtCharts -IG:/QT/5.12.3/msvc2017/include/QtWidgets -IG:/QT/5.12.3/msvc2017/include/QtGui -IG:/QT/5.12.3/msvc2017/include/QtANGLE -IG:/QT/5.12.3/msvc2017/include/QtNetwork -IG:/QT/5.12.3/msvc2017/include/QtSerialPort -IG:/QT/5.12.3/msvc2017/include/QtCore dlg_log.h -o G:\MEGSKY\dev\build\agc_recover\moc\moc_dlg_log.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC dlg_log.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\MEGSKY\dev\build\agc_recover\moc\moc_dlg_log.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">dlg_log.h;G:\MEGSKY\dev\build\agc_recover\moc\moc_predefs.h;G:\QT\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\QT\5.12.3\msvc2017\bin\moc.exe  -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DMEFSKY_32 -D_WIN32_WINNT=0x0500 -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SERIALPORT_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include G:/MEGSKY/dev/build/agc_recover/moc/moc_predefs.h -IG:/QT/5.12.3/msvc2017/mkspecs/win32-msvc -IG:/MEGSKY/dev/src/agc_recover -IG:/MEGSKY/dev/src/agc_recover -IG:/MEGSKY/dev/src/include -IG:/MEGSKY/dev/src/base/filepath -IG:/MEGSKY/dev/src/base/megpub -IG:/MEGSKY/dev/src/include -IG:/MEGSKY/dev/src/mqttclient -IG:/QT/5.12.3/msvc2017/include -IG:/QT/5.12.3/msvc2017/include/QtCharts -IG:/QT/5.12.3/msvc2017/include/QtWidgets -IG:/QT/5.12.3/msvc2017/include/QtGui -IG:/QT/5.12.3/msvc2017/include/QtANGLE -IG:/QT/5.12.3/msvc2017/include/QtNetwork -IG:/QT/5.12.3/msvc2017/include/QtSerialPort -IG:/QT/5.12.3/msvc2017/include/QtCore dlg_log.h -o G:\MEGSKY\dev\build\agc_recover\moc\moc_dlg_log.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC dlg_log.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\MEGSKY\dev\build\agc_recover\moc\moc_dlg_log.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="dlg_mainwindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">dlg_mainwindow.h;G:\MEGSKY\dev\build\agc_recover\moc\moc_predefs.h;G:\QT\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\QT\5.12.3\msvc2017\bin\moc.exe  -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DMEFSKY_32 -D_WIN32_WINNT=0x0500 -DQT_NO_DEBUG -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SERIALPORT_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include G:/MEGSKY/dev/build/agc_recover/moc/moc_predefs.h -IG:/QT/5.12.3/msvc2017/mkspecs/win32-msvc -IG:/MEGSKY/dev/src/agc_recover -IG:/MEGSKY/dev/src/agc_recover -IG:/MEGSKY/dev/src/include -IG:/MEGSKY/dev/src/base/filepath -IG:/MEGSKY/dev/src/base/megpub -IG:/MEGSKY/dev/src/include -IG:/MEGSKY/dev/src/mqttclient -IG:/QT/5.12.3/msvc2017/include -IG:/QT/5.12.3/msvc2017/include/QtCharts -IG:/QT/5.12.3/msvc2017/include/QtWidgets -IG:/QT/5.12.3/msvc2017/include/QtGui -IG:/QT/5.12.3/msvc2017/include/QtANGLE -IG:/QT/5.12.3/msvc2017/include/QtNetwork -IG:/QT/5.12.3/msvc2017/include/QtSerialPort -IG:/QT/5.12.3/msvc2017/include/QtCore dlg_mainwindow.h -o G:\MEGSKY\dev\build\agc_recover\moc\moc_dlg_mainwindow.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC dlg_mainwindow.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\MEGSKY\dev\build\agc_recover\moc\moc_dlg_mainwindow.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">dlg_mainwindow.h;G:\MEGSKY\dev\build\agc_recover\moc\moc_predefs.h;G:\QT\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\QT\5.12.3\msvc2017\bin\moc.exe  -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DMEFSKY_32 -D_WIN32_WINNT=0x0500 -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SERIALPORT_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include G:/MEGSKY/dev/build/agc_recover/moc/moc_predefs.h -IG:/QT/5.12.3/msvc2017/mkspecs/win32-msvc -IG:/MEGSKY/dev/src/agc_recover -IG:/MEGSKY/dev/src/agc_recover -IG:/MEGSKY/dev/src/include -IG:/MEGSKY/dev/src/base/filepath -IG:/MEGSKY/dev/src/base/megpub -IG:/MEGSKY/dev/src/include -IG:/MEGSKY/dev/src/mqttclient -IG:/QT/5.12.3/msvc2017/include -IG:/QT/5.12.3/msvc2017/include/QtCharts -IG:/QT/5.12.3/msvc2017/include/QtWidgets -IG:/QT/5.12.3/msvc2017/include/QtGui -IG:/QT/5.12.3/msvc2017/include/QtANGLE -IG:/QT/5.12.3/msvc2017/include/QtNetwork -IG:/QT/5.12.3/msvc2017/include/QtSerialPort -IG:/QT/5.12.3/msvc2017/include/QtCore dlg_mainwindow.h -o G:\MEGSKY\dev\build\agc_recover\moc\moc_dlg_mainwindow.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC dlg_mainwindow.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\MEGSKY\dev\build\agc_recover\moc\moc_dlg_mainwindow.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="mqtt_pub_inter.h" />
+    <ClInclude Include="public_struct.h" />
+    <ClInclude Include="queue_model.h" />
+    <CustomBuild Include="real_data.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">real_data.h;G:\MEGSKY\dev\build\agc_recover\moc\moc_predefs.h;G:\QT\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\QT\5.12.3\msvc2017\bin\moc.exe  -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DMEFSKY_32 -D_WIN32_WINNT=0x0500 -DQT_NO_DEBUG -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SERIALPORT_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include G:/MEGSKY/dev/build/agc_recover/moc/moc_predefs.h -IG:/QT/5.12.3/msvc2017/mkspecs/win32-msvc -IG:/MEGSKY/dev/src/agc_recover -IG:/MEGSKY/dev/src/agc_recover -IG:/MEGSKY/dev/src/include -IG:/MEGSKY/dev/src/base/filepath -IG:/MEGSKY/dev/src/base/megpub -IG:/MEGSKY/dev/src/include -IG:/MEGSKY/dev/src/mqttclient -IG:/QT/5.12.3/msvc2017/include -IG:/QT/5.12.3/msvc2017/include/QtCharts -IG:/QT/5.12.3/msvc2017/include/QtWidgets -IG:/QT/5.12.3/msvc2017/include/QtGui -IG:/QT/5.12.3/msvc2017/include/QtANGLE -IG:/QT/5.12.3/msvc2017/include/QtNetwork -IG:/QT/5.12.3/msvc2017/include/QtSerialPort -IG:/QT/5.12.3/msvc2017/include/QtCore real_data.h -o G:\MEGSKY\dev\build\agc_recover\moc\moc_real_data.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC real_data.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\MEGSKY\dev\build\agc_recover\moc\moc_real_data.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">real_data.h;G:\MEGSKY\dev\build\agc_recover\moc\moc_predefs.h;G:\QT\5.12.3\msvc2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\QT\5.12.3\msvc2017\bin\moc.exe  -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DMEFSKY_32 -D_WIN32_WINNT=0x0500 -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SERIALPORT_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include G:/MEGSKY/dev/build/agc_recover/moc/moc_predefs.h -IG:/QT/5.12.3/msvc2017/mkspecs/win32-msvc -IG:/MEGSKY/dev/src/agc_recover -IG:/MEGSKY/dev/src/agc_recover -IG:/MEGSKY/dev/src/include -IG:/MEGSKY/dev/src/base/filepath -IG:/MEGSKY/dev/src/base/megpub -IG:/MEGSKY/dev/src/include -IG:/MEGSKY/dev/src/mqttclient -IG:/QT/5.12.3/msvc2017/include -IG:/QT/5.12.3/msvc2017/include/QtCharts -IG:/QT/5.12.3/msvc2017/include/QtWidgets -IG:/QT/5.12.3/msvc2017/include/QtGui -IG:/QT/5.12.3/msvc2017/include/QtANGLE -IG:/QT/5.12.3/msvc2017/include/QtNetwork -IG:/QT/5.12.3/msvc2017/include/QtSerialPort -IG:/QT/5.12.3/msvc2017/include/QtCore real_data.h -o G:\MEGSKY\dev\build\agc_recover\moc\moc_real_data.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC real_data.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\MEGSKY\dev\build\agc_recover\moc\moc_real_data.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\build\agc_recover\moc\moc_RealTimeCurveQChartWidget.cpp" />
+    <ClCompile Include="..\..\build\agc_recover\moc\moc_chart.cpp" />
+    <ClCompile Include="..\..\build\agc_recover\moc\moc_dlg_log.cpp" />
+    <ClCompile Include="..\..\build\agc_recover\moc\moc_dlg_mainwindow.cpp" />
+    <CustomBuild Include="G:\MEGSKY\dev\build\agc_recover\moc\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\..\QT\5.12.3\msvc2017\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cl -BxG:\QT\5.12.3\msvc2017\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -wd4819 -wd4996 -wd4100 -wd4018 -wd4101 -wd4189 -wd4305 -wd4309 -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E ..\..\..\..\QT\5.12.3\msvc2017\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;G:\MEGSKY\dev\build\agc_recover\moc\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\MEGSKY\dev\build\agc_recover\moc\moc_predefs.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\..\QT\5.12.3\msvc2017\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cl -BxG:\QT\5.12.3\msvc2017\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -wd4819 -wd4996 -wd4100 -wd4018 -wd4101 -wd4189 -wd4305 -wd4309 -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E ..\..\..\..\QT\5.12.3\msvc2017\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;G:\MEGSKY\dev\build\agc_recover\moc\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\MEGSKY\dev\build\agc_recover\moc\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClCompile Include="..\..\build\agc_recover\moc\moc_real_data.cpp" />
+    <ClCompile Include="..\..\build\agc_recover\rcc\qrc_agc_recover.cpp" />
+    <ClInclude Include="..\..\build\agc_recover\ui\ui_dlg_com.h" />
+    <ClInclude Include="..\..\build\agc_recover\ui\ui_dlg_log.h" />
+    <ClInclude Include="..\..\build\agc_recover\ui\ui_dlg_resault.h" />
+    <ClInclude Include="..\..\build\agc_recover\ui\ui_mainwindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\dlg_com.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">res\dlg_com.ui;G:\QT\5.12.3\msvc2017\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\QT\5.12.3\msvc2017\bin\uic.exe res\dlg_com.ui -o G:\MEGSKY\dev\build\agc_recover\ui\ui_dlg_com.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC res/dlg_com.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\MEGSKY\dev\build\agc_recover\ui\ui_dlg_com.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">res\dlg_com.ui;G:\QT\5.12.3\msvc2017\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\QT\5.12.3\msvc2017\bin\uic.exe res\dlg_com.ui -o G:\MEGSKY\dev\build\agc_recover\ui\ui_dlg_com.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC res/dlg_com.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\MEGSKY\dev\build\agc_recover\ui\ui_dlg_com.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="res\dlg_log.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">res\dlg_log.ui;G:\QT\5.12.3\msvc2017\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\QT\5.12.3\msvc2017\bin\uic.exe res\dlg_log.ui -o G:\MEGSKY\dev\build\agc_recover\ui\ui_dlg_log.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC res/dlg_log.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\MEGSKY\dev\build\agc_recover\ui\ui_dlg_log.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">res\dlg_log.ui;G:\QT\5.12.3\msvc2017\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\QT\5.12.3\msvc2017\bin\uic.exe res\dlg_log.ui -o G:\MEGSKY\dev\build\agc_recover\ui\ui_dlg_log.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC res/dlg_log.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\MEGSKY\dev\build\agc_recover\ui\ui_dlg_log.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="res\dlg_resault.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">res\dlg_resault.ui;G:\QT\5.12.3\msvc2017\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\QT\5.12.3\msvc2017\bin\uic.exe res\dlg_resault.ui -o G:\MEGSKY\dev\build\agc_recover\ui\ui_dlg_resault.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC res/dlg_resault.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\MEGSKY\dev\build\agc_recover\ui\ui_dlg_resault.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">res\dlg_resault.ui;G:\QT\5.12.3\msvc2017\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\QT\5.12.3\msvc2017\bin\uic.exe res\dlg_resault.ui -o G:\MEGSKY\dev\build\agc_recover\ui\ui_dlg_resault.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC res/dlg_resault.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\MEGSKY\dev\build\agc_recover\ui\ui_dlg_resault.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="res\mainwindow.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">res\mainwindow.ui;G:\QT\5.12.3\msvc2017\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\QT\5.12.3\msvc2017\bin\uic.exe res\mainwindow.ui -o G:\MEGSKY\dev\build\agc_recover\ui\ui_mainwindow.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC res/mainwindow.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\MEGSKY\dev\build\agc_recover\ui\ui_mainwindow.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">res\mainwindow.ui;G:\QT\5.12.3\msvc2017\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\QT\5.12.3\msvc2017\bin\uic.exe res\mainwindow.ui -o G:\MEGSKY\dev\build\agc_recover\ui\ui_mainwindow.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC res/mainwindow.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\MEGSKY\dev\build\agc_recover\ui\ui_mainwindow.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Comm.bmp" />
+    <None Include="images\GPRS.png" />
+    <None Include="images\SIM.png" />
+    <None Include="images\Start.png" />
+    <None Include="images\ShowWidget\VCG211294292398.png" />
+    <None Include="images\ShowWidget\VCG41N1262475670.jpg" />
+    <None Include="images\ShowWidget\VCG41N670692920.jpg" />
+    <None Include="images\about.png" />
+    <None Include="images\add.png" />
+    <None Include="images\admin.png" />
+    <CustomBuild Include="agc_recover.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">agc_recover.qrc;G:\QT\5.12.3\msvc2017\bin\rcc.exe;images\set.png;images\wifi5.png;images\arrows_128.png;images\read.png;images\export.png;images\SIM.png;images\certificate.png;images\logo.png;images\wifi4.png;images\item.png;images\add.png;images\monitor.png;images\update.png;images\basestation.png;images\restart.png;images\wifi3.png;images\debug.png;images\log.png;images\lan-connect.png;images\admin.png;images\wifi2.png;images\success.png;images\about.png;images\play.png;images\wifi1.png;images\paramSet.png;images\down.png;images\center.png;images\tower.png;images\Comm.bmp;images\res.png;images\connect.png;images\wifi0.png;images\halfencrypted.png;images\disconnected.png;images\time.png;images\help.png;images\downarrow.png;images\import.png;images\disconnect.png;images\pause.png;images\station128.png;images\dtu2.png;images\Start.png;images\fail.png;images\webmaster.png;images\up.png;images\delete.png;images\workmode.png;images\dtu.png;images\unkonwn.png;images\nibianqi.png;images\dtu28.png;images\masterstation.png;images\reboot.png;images\copy.png;images\connected.png;images\GPRS.png;images\lan-disconnect.png;images\background2.jpg;images\ShowWidget\VCG211294292398.png;images\ShowWidget\ToolButtonDowm.png;images\ShowWidget\VCG41N1262475670.jpg;images\ShowWidget\VCG41N670692920.jpg;images\ShowWidget\ToolButtonUp.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\QT\5.12.3\msvc2017\bin\rcc.exe -name agc_recover agc_recover.qrc -o G:\MEGSKY\dev\build\agc_recover\rcc\qrc_agc_recover.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RCC agc_recover.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\MEGSKY\dev\build\agc_recover\rcc\qrc_agc_recover.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">agc_recover.qrc;G:\QT\5.12.3\msvc2017\bin\rcc.exe;images\set.png;images\wifi5.png;images\arrows_128.png;images\read.png;images\export.png;images\SIM.png;images\certificate.png;images\logo.png;images\wifi4.png;images\item.png;images\add.png;images\monitor.png;images\update.png;images\basestation.png;images\restart.png;images\wifi3.png;images\debug.png;images\log.png;images\lan-connect.png;images\admin.png;images\wifi2.png;images\success.png;images\about.png;images\play.png;images\wifi1.png;images\paramSet.png;images\down.png;images\center.png;images\tower.png;images\Comm.bmp;images\res.png;images\connect.png;images\wifi0.png;images\halfencrypted.png;images\disconnected.png;images\time.png;images\help.png;images\downarrow.png;images\import.png;images\disconnect.png;images\pause.png;images\station128.png;images\dtu2.png;images\Start.png;images\fail.png;images\webmaster.png;images\up.png;images\delete.png;images\workmode.png;images\dtu.png;images\unkonwn.png;images\nibianqi.png;images\dtu28.png;images\masterstation.png;images\reboot.png;images\copy.png;images\connected.png;images\GPRS.png;images\lan-disconnect.png;images\background2.jpg;images\ShowWidget\VCG211294292398.png;images\ShowWidget\ToolButtonDowm.png;images\ShowWidget\VCG41N1262475670.jpg;images\ShowWidget\VCG41N670692920.jpg;images\ShowWidget\ToolButtonUp.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\QT\5.12.3\msvc2017\bin\rcc.exe -name agc_recover agc_recover.qrc -o G:\MEGSKY\dev\build\agc_recover\rcc\qrc_agc_recover.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RCC agc_recover.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\MEGSKY\dev\build\agc_recover\rcc\qrc_agc_recover.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="images\arrows_128.png" />
+    <None Include="images\background2.jpg" />
+    <None Include="images\basestation.png" />
+    <None Include="images\center.png" />
+    <None Include="images\certificate.png" />
+    <None Include="images\connect.png" />
+    <None Include="images\connected.png" />
+    <None Include="images\copy.png" />
+    <None Include="images\debug.png" />
+    <None Include="images\delete.png" />
+    <None Include="images\disconnect.png" />
+    <None Include="images\disconnected.png" />
+    <None Include="images\down.png" />
+    <None Include="images\downarrow.png" />
+    <None Include="images\dtu.png" />
+    <None Include="images\dtu2.png" />
+    <None Include="images\dtu28.png" />
+    <None Include="images\export.png" />
+    <None Include="images\fail.png" />
+    <None Include="images\halfencrypted.png" />
+    <None Include="images\help.png" />
+    <None Include="images\import.png" />
+    <None Include="images\item.png" />
+    <None Include="images\lan-connect.png" />
+    <None Include="images\lan-disconnect.png" />
+    <None Include="images\log.png" />
+    <None Include="images\logo.png" />
+    <None Include="images\masterstation.png" />
+    <None Include="images\monitor.png" />
+    <None Include="images\nibianqi.png" />
+    <None Include="images\paramSet.png" />
+    <None Include="images\pause.png" />
+    <None Include="images\play.png" />
+    <None Include="images\read.png" />
+    <None Include="images\reboot.png" />
+    <None Include="images\res.png" />
+    <None Include="images\restart.png" />
+    <None Include="images\set.png" />
+    <None Include="images\station128.png" />
+    <None Include="images\success.png" />
+    <None Include="images\time.png" />
+    <None Include="images\tower.png" />
+    <None Include="images\unkonwn.png" />
+    <None Include="images\up.png" />
+    <None Include="images\update.png" />
+    <None Include="images\webmaster.png" />
+    <None Include="images\wifi0.png" />
+    <None Include="images\wifi1.png" />
+    <None Include="images\wifi2.png" />
+    <None Include="images\wifi3.png" />
+    <None Include="images\wifi4.png" />
+    <None Include="images\wifi5.png" />
+    <None Include="images\workmode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="G:\MEGSKY\dev\src\agc_recover\AgcTool_recover_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\lg.png" />
+    <Image Include="images\newlogo.png" />
+    <Image Include="images\ShowWidget\pbdown1.png" />
+    <Image Include="images\ShowWidget\pbup1.png" />
+    <Image Include="images\ShowWidget\ToolButtonUP.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

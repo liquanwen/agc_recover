@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RealTimeCurveQChartWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlg_mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mqtt_pub_inter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="public_struct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="real_data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="RealTimeCurveQChartWidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="agc_recover.pro">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="chart.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dlg_log.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dlg_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="mqtt_pub_inter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="public_struct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="queue_model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="real_data.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\build\agc_recover\moc\moc_RealTimeCurveQChartWidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\build\agc_recover\moc\moc_chart.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\build\agc_recover\moc\moc_dlg_log.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\build\agc_recover\moc\moc_dlg_mainwindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <CustomBuild Include="G:\MEGSKY\dev\build\agc_recover\moc\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <ClCompile Include="..\..\build\agc_recover\moc\moc_real_data.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\build\agc_recover\rcc\qrc_agc_recover.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\build\agc_recover\ui\ui_dlg_com.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\build\agc_recover\ui\ui_dlg_log.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\build\agc_recover\ui\ui_dlg_resault.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\build\agc_recover\ui\ui_mainwindow.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\dlg_com.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\dlg_log.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\dlg_resault.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\mainwindow.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Comm.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\GPRS.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\SIM.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\Start.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\ShowWidget\VCG211294292398.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\ShowWidget\VCG41N1262475670.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\ShowWidget\VCG41N670692920.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\about.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\add.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\admin.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="agc_recover.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="images\arrows_128.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\background2.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\basestation.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\center.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\certificate.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\connect.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\connected.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\copy.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\debug.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\delete.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\disconnect.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\disconnected.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\down.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\downarrow.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\dtu.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\dtu2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\dtu28.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\export.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\fail.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\halfencrypted.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\help.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\import.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\item.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\lan-connect.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\lan-disconnect.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\log.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\logo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\masterstation.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\monitor.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\nibianqi.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\paramSet.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\pause.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\play.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\read.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\reboot.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\res.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\restart.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\set.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\station128.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\success.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\time.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\tower.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\unkonwn.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\up.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\update.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\webmaster.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\wifi0.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\wifi1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\wifi2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\wifi3.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\wifi4.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\wifi5.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\workmode.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="G:\MEGSKY\dev\src\agc_recover\AgcTool_recover_resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\lg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\ShowWidget\ToolButtonUP.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\ShowWidget\pbdown1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\ShowWidget\pbup1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\newlogo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
