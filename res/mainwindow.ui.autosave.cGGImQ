@@ -1,0 +1,1875 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CMainWndDlg_Base</class>
+ <widget class="QMainWindow" name="CMainWndDlg_Base">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1018</width>
+    <height>670</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 75 9pt &quot;Arial&quot;;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="m_ipTitle">
+            <property name="text">
+             <string>通信IP地址</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="m_ipContent">
+            <property name="text">
+             <string>192.168.1.101</string>
+            </property>
+            <property name="clearButtonEnabled">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m_ipConnect">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{background-color: rgb(225, 225, 225);border:2px groove gray;border-radius:10px;padding:2px 4px;border-style: outset;}
+QPushButton:hover{background-color:rgb(229, 241, 251); color: black;}
+QPushButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</string>
+            </property>
+            <property name="text">
+             <string>连接</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>:/images/ltesuccess.png</normaloff>:/images/ltesuccess.png</iconset>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="m_ipDisConnect">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{background-color: rgb(225, 225, 225);border:2px groove gray;border-radius:10px;padding:2px 4px;border-style: outset;}
+QPushButton:hover{background-color:rgb(229, 241, 251); color: black;}
+QPushButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</string>
+            </property>
+            <property name="text">
+             <string>断开</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>:/images/ltefaiure.png</normaloff>:/images/ltefaiure.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="m_connectStatus">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="../agc.qrc">:/images/lan-connect.png</pixmap>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QToolButton" name="m_ReadParam">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>128</width>
+            <height>128</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QToolButton{background-color: rgb(225, 225, 225);border:2px groove gray;border-radius:10px;padding:2px 4px;border-style: outset;}
+QToolButton:hover{background-color:rgb(229, 241, 251); color: black;}
+QToolButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</string>
+          </property>
+          <property name="text">
+           <string>参数读取</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>48</width>
+            <height>48</height>
+           </size>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonTextUnderIcon</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="m_setParam">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>128</width>
+            <height>128</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QToolButton{background-color: rgb(225, 225, 225);border:2px groove gray;border-radius:10px;padding:2px 4px;border-style: outset;}
+QToolButton:hover{background-color:rgb(229, 241, 251); color: black;}
+QToolButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</string>
+          </property>
+          <property name="text">
+           <string>参数下装</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>48</width>
+            <height>48</height>
+           </size>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonTextUnderIcon</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="m_reboot">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>128</width>
+            <height>128</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QToolButton{background-color: rgb(225, 225, 225);border:2px groove gray;border-radius:10px;padding:2px 4px;border-style: outset;}
+QToolButton:hover{background-color:rgb(229, 241, 251); color: black;}
+QToolButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</string>
+          </property>
+          <property name="text">
+           <string>重启</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>48</width>
+            <height>48</height>
+           </size>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonTextUnderIcon</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="m_logo_win" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>82</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>82</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>9</pointsize>
+            <weight>9</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="mouseTracking">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTabBar::tab {min-width:100px;color: black;border: 2px solid;border-top-left-radius: 10px;border-top-right-radius: 10px;padding:5px;}
+QTabBar::tab:!selected {margin-top: 5px;}
+QTabBar::tab:selected {background-color: rgb(0, 255, 255);}
+</string>
+        </property>
+        <property name="tabPosition">
+         <enum>QTabWidget::South</enum>
+        </property>
+        <property name="tabShape">
+         <enum>QTabWidget::Triangular</enum>
+        </property>
+        <property name="currentIndex">
+         <number>4</number>
+        </property>
+        <property name="elideMode">
+         <enum>Qt::ElideLeft</enum>
+        </property>
+        <property name="documentMode">
+         <bool>false</bool>
+        </property>
+        <property name="tabsClosable">
+         <bool>false</bool>
+        </property>
+        <property name="movable">
+         <bool>false</bool>
+        </property>
+        <property name="tabBarAutoHide">
+         <bool>false</bool>
+        </property>
+        <widget class="QWidget" name="tab">
+         <property name="styleSheet">
+          <string notr="true">gridline-color: rgb(0, 0, 255);
+border-color: rgb(0, 0, 127);</string>
+         </property>
+         <attribute name="title">
+          <string>基本参数</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="groupBox">
+            <property name="title">
+             <string> 基本参数</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_10">
+             <item row="0" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_20">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_3">
+                 <item>
+                  <widget class="QCheckBox" name="agc_enable">
+                   <property name="text">
+                    <string>AGC使能标志</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../agc.qrc">
+                     <normaloff>:/images/center.png</normaloff>:/images/center.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>24</width>
+                     <height>24</height>
+                    </size>
+                   </property>
+                   <property name="checked">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_5">
+                   <item>
+                    <widget class="QLabel" name="label_2">
+                     <property name="text">
+                      <string>策略模式</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="agc_strategy">
+                     <property name="styleSheet">
+                      <string notr="true">QComboBox 
+{
+    font:14px;
+    height: 20px;
+border: 1px solid rgb(117, 118, 118);
+        border-radius: 5px;
+        background: white; 
+padding: 1px 2px 1px 2px;
+}
+QComboBox:hover, QComboBox:focus 
+{
+    background: rgb(20,162,182);
+}
+
+
+QComboBox QAbstractItemView 
+{
+    border: none;
+    outline:none;
+    selection-background-color:rgb(20,162,182);
+}
+/*选项的高度*/
+QComboBox QAbstractItemView::item 
+{
+    height: 20px;
+}</string>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>自动选择</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>平均策略</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>主动策略</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>AI自学</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QGroupBox" name="groupBox_5">
+                   <property name="title">
+                    <string>有功功率参数</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_9">
+                    <item row="5" column="0">
+                     <layout class="QHBoxLayout" name="horizontalLayout_8">
+                      <item>
+                       <widget class="QLabel" name="label_6">
+                        <property name="text">
+                         <string>逆变器功率门槛值</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="horizontalSpacer_9">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QLineEdit" name="lineEdit_Inv_dead_zone"/>
+                      </item>
+                      <item>
+                       <widget class="QLabel" name="label_8">
+                        <property name="text">
+                         <string>kW</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item row="3" column="0">
+                     <layout class="QHBoxLayout" name="horizontalLayout_13">
+                      <item>
+                       <widget class="QLabel" name="label_3">
+                        <property name="text">
+                         <string>目标功率</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="horizontalSpacer_7">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QLineEdit" name="agc_setpower">
+                        <property name="styleSheet">
+                         <string notr="true">QLineEdit{ background-color: rgba(255,240,255,120); }QLineEdit:focus{background-color: rgb(255,255,255)}</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLabel" name="label_4">
+                        <property name="text">
+                         <string>MW</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item row="0" column="0">
+                     <layout class="QHBoxLayout" name="horizontalLayout_4">
+                      <item>
+                       <widget class="QLabel" name="label">
+                        <property name="text">
+                         <string>实时功率获取方式</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QComboBox" name="agc_getpower">
+                        <property name="styleSheet">
+                         <string notr="true">QComboBox 
+{
+    font:14px;
+    height: 20px;
+border: 1px solid rgb(117, 118, 118);
+        border-radius: 5px;
+        background: white; 
+padding: 1px 2px 1px 2px;
+}
+QComboBox:hover, QComboBox:focus 
+{
+    background: rgb(20,162,182);
+}
+
+
+QComboBox QAbstractItemView 
+{
+    border: none;
+    outline:none;
+    selection-background-color:rgb(20,162,182);
+}
+/*选项的高度*/
+QComboBox QAbstractItemView::item 
+{
+    height: 20px;
+}</string>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>12</width>
+                          <height>12</height>
+                         </size>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>本地计算</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>协议获取</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item row="1" column="0">
+                     <layout class="QHBoxLayout" name="horizontalLayout_18">
+                      <item>
+                       <widget class="QLabel" name="label_16">
+                        <property name="text">
+                         <string>实时发电有功功率遥测点号</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="horizontalSpacer_12">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QLineEdit" name="generate_power_yc_sort">
+                        <property name="styleSheet">
+                         <string notr="true">QLineEdit{ background-color: rgba(255,240,255,120); }QLineEdit:focus{background-color: rgb(255,255,255)}</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item row="4" column="0">
+                     <layout class="QHBoxLayout" name="horizontalLayout_7">
+                      <item>
+                       <widget class="QLabel" name="label_5">
+                        <property name="text">
+                         <string>目标功率门槛值</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="horizontalSpacer_8">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QLineEdit" name="lineEdit_agc_dead_zone">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLabel" name="label_7">
+                        <property name="text">
+                         <string>kW</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item row="2" column="0">
+                     <layout class="QHBoxLayout" name="horizontalLayout_19">
+                      <item>
+                       <widget class="QLabel" name="label_18">
+                        <property name="text">
+                         <string>并网点有功功率遥测点号</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="horizontalSpacer_13">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QLineEdit" name="merge_grid_yc_sort">
+                        <property name="styleSheet">
+                         <string notr="true">QLineEdit{ background-color: rgba(255,240,255,120); }QLineEdit:focus{background-color: rgb(255,255,255)}</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item row="6" column="0">
+                     <spacer name="verticalSpacer">
+                      <property name="orientation">
+                       <enum>Qt::Vertical</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>20</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_4">
+                 <item>
+                  <widget class="QGroupBox" name="groupBox_3">
+                   <property name="title">
+                    <string>  样板逆变器</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_4">
+                    <item row="0" column="0">
+                     <layout class="QHBoxLayout" name="horizontalLayout_10">
+                      <item>
+                       <widget class="QLabel" name="label_11">
+                        <property name="text">
+                         <string>是否参考样板</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="horizontalSpacer_14">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QComboBox" name="template_enable">
+                        <property name="styleSheet">
+                         <string notr="true">QComboBox 
+{
+    font:14px;
+    height: 20px;
+border: 1px solid rgb(117, 118, 118);
+        border-radius: 5px;
+        background: white; 
+padding: 1px 2px 1px 2px;
+}
+QComboBox:hover, QComboBox:focus 
+{
+    background: rgb(20,162,182);
+}
+
+
+QComboBox QAbstractItemView 
+{
+    border: none;
+    outline:none;
+    selection-background-color:rgb(20,162,182);
+}
+/*选项的高度*/
+QComboBox QAbstractItemView::item 
+{
+    height: 20px;
+}</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>是</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>否</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item row="1" column="0">
+                     <layout class="QHBoxLayout" name="horizontalLayout_12">
+                      <item>
+                       <widget class="QLabel" name="label_12">
+                        <property name="text">
+                         <string>样板逆变器序号</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="horizontalSpacer_15">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QLineEdit" name="template_sn">
+                        <property name="styleSheet">
+                         <string notr="true">QLineEdit{ background-color: rgba(255,240,255,120); }QLineEdit:focus{background-color: rgb(255,255,255)}</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QGroupBox" name="groupBox_4">
+                   <property name="title">
+                    <string>遥调参数</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_8">
+                    <item row="3" column="0">
+                     <layout class="QHBoxLayout" name="horizontalLayout_17">
+                      <item>
+                       <widget class="QLabel" name="label_15">
+                        <property name="text">
+                         <string>调节开关关闭命令遥调值</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="horizontalSpacer_11">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QLineEdit" name="adjust_off_cmd">
+                        <property name="styleSheet">
+                         <string notr="true">QLineEdit{ background-color: rgba(255,240,255,120); }QLineEdit:focus{background-color: rgb(255,255,255)}</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item row="2" column="0">
+                     <layout class="QHBoxLayout" name="horizontalLayout_14">
+                      <item>
+                       <widget class="QLabel" name="label_14">
+                        <property name="text">
+                         <string>调节开关开启命令遥调值</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="horizontalSpacer_10">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QLineEdit" name="adjust_on_cmd">
+                        <property name="styleSheet">
+                         <string notr="true">QLineEdit{ background-color: rgba(255,240,255,120); }QLineEdit:focus{background-color: rgb(255,255,255)}</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item row="4" column="0">
+                     <layout class="QHBoxLayout" name="horizontalLayout_11">
+                      <item>
+                       <widget class="QLabel" name="label_13">
+                        <property name="text">
+                         <string>逆变器使能标志有效位</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="horizontalSpacer_18">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QComboBox" name="inverter_adjust_sw">
+                        <property name="styleSheet">
+                         <string notr="true">QComboBox 
+{
+    font:14px;
+    height: 20px;
+border: 1px solid rgb(117, 118, 118);
+        border-radius: 5px;
+        background: white; 
+padding: 1px 2px 1px 2px;
+}
+QComboBox:hover, QComboBox:focus 
+{
+    background: rgb(20,162,182);
+}
+
+
+QComboBox QAbstractItemView 
+{
+    border: none;
+    outline:none;
+    selection-background-color:rgb(20,162,182);
+}
+/*选项的高度*/
+QComboBox QAbstractItemView::item 
+{
+    height: 20px;
+}</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>有效</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>无效</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item row="0" column="0">
+                     <layout class="QHBoxLayout" name="horizontalLayout_6">
+                      <item>
+                       <widget class="QLabel" name="label_9">
+                        <property name="text">
+                         <string>遥调执行类型</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="horizontalSpacer_16">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QComboBox" name="yt_flag">
+                        <property name="styleSheet">
+                         <string notr="true">QComboBox 
+{
+    font:14px;
+    height: 20px;
+border: 1px solid rgb(117, 118, 118);
+        border-radius: 5px;
+        background: white; 
+padding: 1px 2px 1px 2px;
+}
+QComboBox:hover, QComboBox:focus 
+{
+    background: rgb(20,162,182);
+}
+
+
+QComboBox QAbstractItemView 
+{
+    border: none;
+    outline:none;
+    selection-background-color:rgb(20,162,182);
+}
+/*选项的高度*/
+QComboBox QAbstractItemView::item 
+{
+    height: 20px;
+}</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>直接</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>选择执行</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item row="1" column="0">
+                     <layout class="QHBoxLayout" name="horizontalLayout_9">
+                      <item>
+                       <widget class="QLabel" name="label_10">
+                        <property name="text">
+                         <string>遥调数据类型</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="horizontalSpacer_17">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QComboBox" name="yt_type">
+                        <property name="styleSheet">
+                         <string notr="true">QComboBox 
+{
+    font:14px;
+    height: 20px;
+border: 1px solid rgb(117, 118, 118);
+        border-radius: 5px;
+        background: white; 
+padding: 1px 2px 1px 2px;
+}
+QComboBox:hover, QComboBox:focus 
+{
+    background: rgb(20,162,182);
+}
+
+
+QComboBox QAbstractItemView 
+{
+    border: none;
+    outline:none;
+    selection-background-color:rgb(20,162,182);
+}
+/*选项的高度*/
+QComboBox QAbstractItemView::item 
+{
+    height: 20px;
+}</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>归一化</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>标度化</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>浮点数</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item row="5" column="0">
+                     <spacer name="verticalSpacer_2">
+                      <property name="orientation">
+                       <enum>Qt::Vertical</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>20</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="title">
+          <string>实时数据</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="groupBox_2">
+            <property name="title">
+             <string> 实时数据</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_5">
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_15">
+                 <item>
+                  <widget class="QLabel" name="label_17">
+                   <property name="text">
+                    <string> 总功率</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_p">
+                   <property name="readOnly">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QTreeWidget" name="treeWidget">
+                 <column>
+                  <property name="text">
+                   <string>逆变器编号</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>逆变器名称</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>实时功率</string>
+                  </property>
+                 </column>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string> 逆变器调节参数</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <spacer name="horizontalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QToolButton" name="m_addInv">
+                <property name="styleSheet">
+                 <string notr="true">QToolButton{background-color: rgb(225, 225, 225);border:2px groove gray;border-radius:10px;padding:2px 4px;border-style: outset;}
+QToolButton:hover{background-color:rgb(229, 241, 251); color: black;}
+QToolButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</string>
+                </property>
+                <property name="text">
+                 <string>添加逆变器</string>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>32</width>
+                  <height>32</height>
+                 </size>
+                </property>
+                <property name="toolButtonStyle">
+                 <enum>Qt::ToolButtonTextUnderIcon</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QToolButton" name="m_delInv">
+                <property name="styleSheet">
+                 <string notr="true">QToolButton{background-color: rgb(225, 225, 225);border:2px groove gray;border-radius:10px;padding:2px 4px;border-style: outset;}
+QToolButton:hover{background-color:rgb(229, 241, 251); color: black;}
+QToolButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</string>
+                </property>
+                <property name="text">
+                 <string>删除逆变器</string>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>32</width>
+                  <height>32</height>
+                 </size>
+                </property>
+                <property name="toolButtonStyle">
+                 <enum>Qt::ToolButtonTextUnderIcon</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QToolButton" name="m_copyInv">
+                <property name="styleSheet">
+                 <string notr="true">QToolButton{background-color: rgb(225, 225, 225);border:2px groove gray;border-radius:10px;padding:2px 4px;border-style: outset;}
+QToolButton:hover{background-color:rgb(229, 241, 251); color: black;}
+QToolButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</string>
+                </property>
+                <property name="text">
+                 <string> 复制逆变器</string>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>32</width>
+                  <height>32</height>
+                 </size>
+                </property>
+                <property name="toolButtonStyle">
+                 <enum>Qt::ToolButtonTextUnderIcon</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QTableWidget" name="InvTable">
+              <property name="styleSheet">
+               <string notr="true">QHeaderView::section{ 
+            color:black; 
+　　　　　　  background-color:#5a636d;
+            border:0.5px solid #212426;; 
+           height: 30px;
+            font: 12pt 'Microsoft YaHei' 
+        }
+selection-background-color:lightblue;</string>
+              </property>
+              <attribute name="horizontalHeaderCascadingSectionResizes">
+               <bool>false</bool>
+              </attribute>
+              <attribute name="horizontalHeaderDefaultSectionSize">
+               <number>100</number>
+              </attribute>
+              <attribute name="horizontalHeaderMinimumSectionSize">
+               <number>40</number>
+              </attribute>
+              <attribute name="verticalHeaderDefaultSectionSize">
+               <number>30</number>
+              </attribute>
+              <attribute name="verticalHeaderMinimumSectionSize">
+               <number>23</number>
+              </attribute>
+              <attribute name="verticalHeaderStretchLastSection">
+               <bool>false</bool>
+              </attribute>
+              <column>
+               <property name="text">
+                <string>序号</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>名称</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>实时功率点号</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>遥信值点号</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>遥控值点号</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>遥调值点号</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>使能开启点号</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>使能关闭点号</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>所属组</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>逆变器状态点号</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>优先级</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>使能标志</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>额定功率(kW)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>设置功率(kW)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>曲线开始时间</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>曲线结束时间</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>曲线点间隔时间(分钟)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>曲线内容</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>日志</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_7">
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_16">
+              <item>
+               <widget class="QToolButton" name="m_readLog">
+                <property name="styleSheet">
+                 <string notr="true">QToolButton{background-color: rgb(225, 225, 225);border:2px groove gray;border-radius:10px;padding:2px 4px;border-style: outset;}
+QToolButton:hover{background-color:rgb(229, 241, 251); color: black;}
+QToolButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</string>
+                </property>
+                <property name="text">
+                 <string>开始读取</string>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>32</width>
+                  <height>32</height>
+                 </size>
+                </property>
+                <property name="toolButtonStyle">
+                 <enum>Qt::ToolButtonTextUnderIcon</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QToolButton" name="m_closeLog">
+                <property name="styleSheet">
+                 <string notr="true">QToolButton{background-color: rgb(225, 225, 225);border:2px groove gray;border-radius:10px;padding:2px 4px;border-style: outset;}
+QToolButton:hover{background-color:rgb(229, 241, 251); color: black;}
+QToolButton:pressed{background-color:rgb(204, 228, 247);border-style: inset;}</string>
+                </property>
+                <property name="text">
+                 <string>   停止读取</string>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>32</width>
+                  <height>32</height>
+                 </size>
+                </property>
+                <property name="toolButtonStyle">
+                 <enum>Qt::ToolButtonTextUnderIcon</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_6">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QTextBrowser" name="textBrowser"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_5">
+         <attribute name="title">
+          <string> 演示</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_12">
+          <item row="0" column="0">
+           <widget class="QWidget" name="widget" native="true">
+            <property name="styleSheet">
+             <string notr="true">background-image: url(:/images/background2.jpg);</string>
+            </property>
+            <widget class="QLabel" name="label_56">
+             <property name="geometry">
+              <rect>
+               <x>90</x>
+               <y>10</y>
+               <width>141</width>
+               <height>171</height>
+              </rect>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>141</width>
+               <height>171</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="../agc.qrc">:/images/nibianqi.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_6">
+             <property name="geometry">
+              <rect>
+               <x>460</x>
+               <y>90</y>
+               <width>301</width>
+               <height>321</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>301</width>
+               <height>286</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="title">
+              <string>实时曲线</string>
+             </property>
+            </widget>
+            <widget class="QWidget" name="">
+             <property name="geometry">
+              <rect>
+               <x>11</x>
+               <y>236</y>
+               <width>319</width>
+               <height>292</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_21">
+                <item>
+                 <widget class="QLabel" name="label_55">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string> 逆变器1 有功功率：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_1">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 0);</string>
+                  </property>
+                  <property name="text">
+                   <string>123</string>
+                  </property>
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_22">
+                <item>
+                 <widget class="QLabel" name="label_58">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string> 逆变器2 有功功率：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_2">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 127);</string>
+                  </property>
+                  <property name="text">
+                   <string>123</string>
+                  </property>
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_37">
+                <item>
+                 <widget class="QLabel" name="label_59">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string> 逆变器3 有功功率：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_3">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 0);</string>
+                  </property>
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_23">
+                <item>
+                 <widget class="QLabel" name="label_62">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string> 逆变器4 有功功率：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_4">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 0);</string>
+                  </property>
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_24">
+                <item>
+                 <widget class="QLabel" name="label_64">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string> 逆变器5 有功功率：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_5">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 0);</string>
+                  </property>
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_25">
+                <item>
+                 <widget class="QLabel" name="label_65">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string> 逆变器6 有功功率：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_6">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 0);</string>
+                  </property>
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_26">
+                <item>
+                 <widget class="QLabel" name="label_67">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string> 逆变器7 有功功率：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_7">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 0);</string>
+                  </property>
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_38">
+                <item>
+                 <widget class="QLabel" name="label_72">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string> 逆变器8 有功功率：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_8">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 0);</string>
+                  </property>
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_27">
+                <item>
+                 <widget class="QLabel" name="label_71">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string> 逆变器9 有功功率：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_09">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 0);</string>
+                  </property>
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_28">
+                <item>
+                 <widget class="QLabel" name="label_73">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string> 逆变器10有功功率：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_010"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>200</y>
+               <width>211</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_39">
+              <item>
+               <widget class="QLabel" name="label_57">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string> 发电总   有功功率：</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_00">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(255, 255, 0);</string>
+                </property>
+                <property name="text">
+                 <string>123</string>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <action name="Act_Login">
+   <property name="text">
+    <string>新建</string>
+   </property>
+  </action>
+  <action name="Act_Logout">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="Act_Exit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="Act_AddInfo">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/addDev.png</normaloff>../images/addDev.png</iconset>
+   </property>
+   <property name="text">
+    <string>添加设备</string>
+   </property>
+  </action>
+  <action name="Act_ModInfo">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/modDev.png</normaloff>../images/modDev.png</iconset>
+   </property>
+   <property name="text">
+    <string>修改设备</string>
+   </property>
+  </action>
+  <action name="Act_ExpData">
+   <property name="text">
+    <string>导出数据</string>
+   </property>
+  </action>
+  <action name="Act_ImpData">
+   <property name="text">
+    <string>导入数据</string>
+   </property>
+  </action>
+  <action name="action_recoverKey">
+   <property name="text">
+    <string>恢复密钥</string>
+   </property>
+  </action>
+  <action name="Act_LoadProject">
+   <property name="text">
+    <string>设置终端</string>
+   </property>
+  </action>
+  <action name="Act_Link">
+   <property name="text">
+    <string>连接</string>
+   </property>
+  </action>
+  <action name="Act_HisFrame">
+   <property name="text">
+    <string>查询数据</string>
+   </property>
+  </action>
+  <action name="Act_Break">
+   <property name="text">
+    <string>断开</string>
+   </property>
+  </action>
+  <action name="Act_autoTest">
+   <property name="text">
+    <string>自动测试</string>
+   </property>
+  </action>
+  <action name="Act_stopAutoTest">
+   <property name="text">
+    <string>停止自动测试</string>
+   </property>
+  </action>
+  <action name="Act_EncryMachine">
+   <property name="text">
+    <string>连接加密机</string>
+   </property>
+  </action>
+  <action name="Act_ParamConfig">
+   <property name="text">
+    <string>帮助</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../agc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
